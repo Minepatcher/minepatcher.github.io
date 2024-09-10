@@ -1,6 +1,57 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css" >
+<style>
+body,
+fieldset,
+legend,
+img,
+h1 {
+  display: flex;
+  box-sizing: content-box;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+fieldset {
+  flex-direction: column;
+  align-items: center;
+  padding: unset;
+  margin: unset;
+  border-color: #fdc331;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  height: 166px;
+  filter: drop-shadow(0 1px 1px #000);
+}
+legend {
+  margin: auto;
+  color: #fdc331;
+  filter: drop-shadow(0 1px #000);
+}
+legend:after {
+  content: "Next Pokemon";
+}
+legend.catchPokemon:after {
+  content: "!pokecatch";
+}
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 1px 1px #000);
+}
+h1 {
+  margin: 0px;
+  color: #fdc331;
+  filter: drop-shadow(1px 1px 1px #000);
+  font-size: 2.5em;
+}
+</style>
 </head>
 <body>
 <fieldset id="fieldset">
