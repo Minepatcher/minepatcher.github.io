@@ -94,8 +94,8 @@ async function mainloop() {
 				sAud1.currentTime = 0;
 			}, 3000);
 		}
-		
-		legend.innerHTML = "!pokecatch &lt;pokeball&gt;";
+	      
+		legend.classList.toggle("catchPokemon");
         
         if(spawn === "gif") {
           display_image("static/pokedex/sprites/front/" + pokedex_id + ".gif");
@@ -106,7 +106,8 @@ async function mainloop() {
         // remove picture in 90 seconds
         var hide_picture_seconds = next_spawn - 810;
         setTimeout(function () {
-          legend.innerHTML = "Next Pokemon";
+          legend.classList.toggle("catchPokemon");
+	
           display_image("static/pokedex/sprites/question512.png");
 		  if(audio) {
 			sAud2.play();
