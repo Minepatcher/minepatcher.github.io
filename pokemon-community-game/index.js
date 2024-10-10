@@ -34,8 +34,8 @@ var last_pokedex_id = 0,
   pokedex_id,
   order;
 
-sAud1.volume = 0.1;
-sAud2.volume = 0.1;
+sAud1.volume = 0.5;
+sAud2.volume = 0.5;
 
 if(spawn === "hide") {
   sprite.style = "display:none;";
